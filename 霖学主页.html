@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>霖学 | 官方网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Times New Roman", "SimSun", serif;
+            background-color: #0a192f;
+            color: #e6f1ff;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        .navbar {
+            background-color: rgba(10, 25, 47, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #64ffda;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links a {
+            color: #8892b0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #64ffda;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #e6f1ff;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            color: #8892b0;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 30px;
+        }
+        .section {
+            background-color: rgba(17, 34, 64, 0.8);
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(100, 255, 218, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .section-title {
+            font-size: 28px;
+            color: #64ffda;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(100, 255, 218, 0.2);
+        }
+        .section-content {
+            color: #8892b0;
+            font-size: 17px;
+        }
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .nav-card {
+            background-color: rgba(100, 255, 218, 0.05);
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid rgba(100, 255, 218, 0.1);
+            transition: all 0.3s ease;
+        }
+        .nav-card:hover {
+            background-color: rgba(100, 255, 218, 0.1);
+            border-color: #64ffda;
+        }
+        .nav-card a {
+            color: #64ffda;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .nav-card p {
+            color: #8892b0;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: rgba(10, 25, 47, 0.95);
+            border-top: 1px solid rgba(100, 255, 218, 0.1);
+            padding: 40px 30px;
+            text-align: center;
+            color: #8892b0;
+        }
+        .footer p {
+            margin-bottom: 10px;
+        }
+        .footer a {
+            color: #64ffda;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">霖学</div>
+            <div class="nav-links">
+                <a href=" ">关于我们</a >
+                <a href="#publications">最新刊物</a >
+                <a href="#links">相关链接</a >
+                <a href="#contact">联系我们</a >
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>欢迎访问霖学官方网站</h1>
+        <p>以传播简单学术内容为宗旨，致力于为每一位求知者提供清晰、易懂的知识分享</p >
+    </section>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2 class="section-title">关于霖学</h2>
+            <div class="section-content">
+                <p>本网站以健康、积极、向上、奋进为宗旨，向所有同学以及网站使用者提供帮助。我们致力于将复杂的学术内容转化为易于理解的形式，让知识不再有门槛，让每一个人都能轻松接触到优质的学术资源。</p >
+                <br>
+                <p>霖学官方网站由"清心寡欲"设计，包含但不限于"聪颖的充能柚子","佚名","赵宇涵"等人进行的大力支持。我们始终坚持开放、共享的理念，不断更新和完善内容，为大家提供更有价值的学术服务。</p >
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <h2 class="section-title">最新刊物</h2>
+            <div class="section-content">
+                <div class="img-box" style="text-align: center; margin: 20px 0;">
+                    <img src="霖学研究会“海姆利克.png" alt=" " style="max-width: 50%; height: auto; border-radius: 8px;">
+                    <p style="margin-top: 10px; font-size: 15px; color: #8892b0;">图1 霖学学会对外刊物第一期</p >
+                </div>
+                <p>我们定期发布学术刊物，内容涵盖多个学科领域，以深入浅出的方式解读前沿学术成果，为广大求知者提供学习和交流的平台。</p >
+            </div>
+        </section>
+
+        <section id="links" class="section">
+            <h2 class="section-title">对外刊物</h2>
+            <div class="nav-grid">
+                <div class="nav-card">
+                    <a href="https://example.com/partner1" target="_blank">第一期</a >
+                    <p>海姆力克急救法</p >
+                </div>
+                <div class="nav-card">
+                    <a href="https://example.com/partner2" target="_blank">第二期</a >
+                    <p>无</p >
+                </div>
+                <div class="nav-card">
+                    <a href="https://example.com/partner3" target="_blank">第三期</a >
+                    <p>无</p >
+                </div>
+                <div class="nav-card">
+                    <a href="https://example.com/partner4" target="_blank">第四期</a >
+                    <p>无</p >
+                </div>
+            </div>
+            <p style="margin-top: 30px; color: #8892b0; font-size: 15px;">本网站为霖学官方网站，并不存在其他官方网址，如有存在纯属盗版，本网站会第一时间更新霖学学术内容，感谢您的关注。</p >
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 霖学官方网站 | 由"清心寡欲"设计</p >
+        <p>联系方式：<a href="mailto:contact@linxue.edu">QQ：2670275997</a ></p >
+    </footer>
+</body>
+</html>
